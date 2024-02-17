@@ -8,6 +8,10 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done - bye!"
+      - name: Run shell script
+        run: |
+            echo "First output"
+            echo "Second output"
 #    steps:
 #    - uses: actions/checkout@v3
 #    - name: Build the Docker image
