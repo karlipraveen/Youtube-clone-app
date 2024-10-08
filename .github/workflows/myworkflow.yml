@@ -3,8 +3,8 @@ on: push
 
 jobs:
   run-shell-command:
-    run-on: ubuntu-latest
-    name: Run a shell command and print some text
+    runs-on: ubuntu-latest
+
     steps:
       - name: echo string
         run: echo "Hello, security Gurus! This is our first Github actions"
