@@ -1,8 +1,10 @@
 name: Run shell commands
 on: push
+
 jobs:
   run-shell-command:
-  name: Run a shell command and print some text
-  steps:
-    - name: echo string
-      run: echo "Hello, security Gurus! This is our first Github actions"
+    run-on: ubuntu-latest
+    name: Run a shell command and print some text
+    steps:
+      - name: echo string
+        run: echo "Hello, security Gurus! This is our first Github actions"
